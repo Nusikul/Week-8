@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Intro;
+    src: url(assets.BEM/fonts/IntroDemoCond-BlackCAPS.otf);
+    font-family: Intro-light;
+    src: url(assets.BEM/fonts/IntroDemoCond-LightCAPS.otf);
+
+}
+
+h1 {
+    font-family: 'Intro';
+}
+
+.opportunity-main {
+    display: grid;
+    grid-template-areas: "opportunity-1st opportunity-2nd opportunity-3rd"
+        "opportunity-4th opportunity-5th subscription";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: space-around;
+    text-align: left;
+    font-family: 'Intro';
+}
+
+
+.opportunity-1st__opportunity__description-text,
+.opportunity-2nd__opportunity__description-text,
+.opportunity-3rd__opportunity__description-text,
+.opportunity-4th__opportunity__description-text,
+.opportunity-5th__opportunity__description-text {
+    font-family: 'Roboto Slab', serif;
+}
+
+.subscription {
+    background-color: #EC615B;
+    ;
+    color: aliceblue;
+    width: 365px;
+    height: 233px;
+}
+
+.subscription__contacts {
+    margin: 2%;
+}
+
+.subscription__button_active {
+    background-color: blue;
+    margin: 2%;
+}
+
+.subscription__button_active_text {
+    color: aliceblue;
+
+}
